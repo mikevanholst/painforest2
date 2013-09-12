@@ -18,12 +18,13 @@ describe Product do
     nilly.price_in_cents.should_not be_true 
   end
 
-  it "should be valid with name, description and price present" do
+  it "should be valid with name, description and an integer for price present" do
     product.valid?.should be_true
   end  
 
-  it "must have an integer for price" do
-    product.price_in_cents.should be_an(Integer)
-  end 
+  # it "must have an integer for price" do
+  #   # product.price_in_cents.should be_an(Integer)
+  #   product.valid?.should be_true
+  # end 
    
 end
